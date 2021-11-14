@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="..\output\ASchedule.exe"/>
+    <OBJFILES value="..\temp\ASchedule.obj ..\temp\A_Util.obj ..\temp\Global.obj 
+      ..\temp\f_ABOUT.obj ..\temp\f_MAIN.obj ..\temp\f_CHANGE.obj 
+      ..\temp\f_CONFIG.obj ..\temp\f_SCDINFO.obj ..\temp\f_SCHOOL.obj 
+      ..\temp\f_SBJ.obj ..\temp\f_TEACHER.obj ..\temp\f_THR_SBJ.obj 
+      ..\temp\f_MOVLSN.obj ..\temp\f_PERSONAL.obj ..\temp\f_Sclass.obj 
+      ..\temp\f_SPLASH.obj ..\temp\f_Sview.obj ..\temp\r_teacher.obj 
+      ..\temp\r_schdule.obj ..\temp\r_classes.obj ..\temp\GRP_Util.obj 
+      ..\temp\SCD_Files.obj ..\temp\SSC_File_ver300.obj 
+      ..\temp\SSB_File_ver300.obj ..\temp\STC_File_ver300.obj 
+      ..\temp\SCD_File_ver100.obj ..\temp\SCD_File_ver200.obj 
+      ..\temp\SCD_File_ver300.obj ..\temp\SCD_File_ver310.obj 
+      ..\temp\CSV_Files.obj"/>
+    <RESFILES value="ASchedule.res"/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) f_ABOUT.dfm f_MAIN.dfm f_CHANGE.dfm f_CONFIG.dfm f_SCDINFO.dfm 
+      f_SCHOOL.dfm f_SBJ.dfm f_TEACHER.dfm f_THR_SBJ.dfm f_MOVLSN.dfm 
+      f_PERSONAL.dfm f_Sclass.dfm f_SPLASH.dfm f_Sview.dfm r_teacher.dfm 
+      r_schdule.dfm r_classes.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="vcldbx.lib vcldb.lib qrpt.lib bdertl.lib dbrtl.lib vclx.lib rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib vclx.lib dbrtl.lib bdertl.lib qrpt.lib vcldb.lib vcldbx.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi vclx.bpi bcbsmp.bpi dbrtl.bpi adortl.bpi vcldb.bpi 
+      qrpt.bpi bdertl.bpi vcldbx.bpi dsnap.bpi cds.bpi bdecds.bpi teeui.bpi 
+      teedb.bpi tee.bpi teeqr.bpi ibxpress.bpi visualclx.bpi visualdbclx.bpi 
+      vclie.bpi xmlrtl.bpi inet.bpi inetdbbde.bpi inetdbxpress.bpi inetdb.bpi 
+      nmfast.bpi bcbie.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      indy.bpi bcb2kaxserver.bpi"/>
+    <PATHCPP value=".;filefmt"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="ASchedule.cpp"/>
+    <INCLUDEPATH value="filefmt;$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="filefmt;$(BCB)\Projects;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c 
+      -tW -tWM"/>
+    <PFLAGS value="-N2..\temp -N0..\temp -$YD -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zd"/>
+    <LFLAGS value="-I..\temp -D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="ASchedule.res" FORMNAME="" UNITNAME="ASchedule.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ASchedule.cpp" FORMNAME="" UNITNAME="ASchedule" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="A_Util.cpp" FORMNAME="" UNITNAME="A_Util" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Global.cpp" FORMNAME="" UNITNAME="GLOBAL" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="f_ABOUT.cpp" FORMNAME="frmAbout" UNITNAME="f_ABOUT" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="f_MAIN.cpp" FORMNAME="frmMain" UNITNAME="f_MAIN" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="f_CHANGE.cpp" FORMNAME="frmChange" UNITNAME="f_CHANGE" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="f_CONFIG.cpp" FORMNAME="frmConfig" UNITNAME="f_CONFIG" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="f_SCDINFO.cpp" FORMNAME="frmScheduleInfo" UNITNAME="f_SCDINFO" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="f_SCHOOL.cpp" FORMNAME="frmSchool" UNITNAME="f_SCHOOL" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="f_SBJ.cpp" FORMNAME="frmSubject" UNITNAME="f_SBJ" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="f_TEACHER.cpp" FORMNAME="frmTeacher" UNITNAME="f_TEACHER" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="f_THR_SBJ.cpp" FORMNAME="frmTeacherSubject" UNITNAME="f_THR_SBJ" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="f_MOVLSN.cpp" FORMNAME="frmMoveLesson" UNITNAME="f_MOVLSN" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="f_PERSONAL.cpp" FORMNAME="frmPersonal" UNITNAME="f_PERSONAL" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="f_Sclass.cpp" FORMNAME="frmClass" UNITNAME="f_SCLASS" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="f_SPLASH.cpp" FORMNAME="frmSplash" UNITNAME="f_SPLASH" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="f_Sview.cpp" FORMNAME="frmView" UNITNAME="f_SVIEW" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="r_teacher.cpp" FORMNAME="qrTeachers" UNITNAME="r_teacher" CONTAINERID="CCompiler" DESIGNCLASS="TQuickRep" LOCALCOMMAND=""/>
+      <FILE FILENAME="r_schdule.cpp" FORMNAME="qrSchedules" UNITNAME="r_schdule" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="r_classes.cpp" FORMNAME="qrClasses" UNITNAME="r_classes" CONTAINERID="CCompiler" DESIGNCLASS="TQuickRep" LOCALCOMMAND=""/>
+      <FILE FILENAME="GRP_Util.cpp" FORMNAME="" UNITNAME="GRP_Util" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="filefmt\SCD_Files.cpp" FORMNAME="" UNITNAME="SCD_Files.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="filefmt\SSC_File_ver300.cpp" FORMNAME="" UNITNAME="SSC_File_ver300.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="filefmt\SSB_File_ver300.cpp" FORMNAME="" UNITNAME="SSB_File_ver300.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="filefmt\STC_File_ver300.cpp" FORMNAME="" UNITNAME="STC_File_ver300.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="filefmt\SCD_File_ver100.cpp" FORMNAME="" UNITNAME="SCD_File_ver100.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="filefmt\SCD_File_ver200.cpp" FORMNAME="" UNITNAME="SCD_File_ver200.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="filefmt\SCD_File_ver300.cpp" FORMNAME="" UNITNAME="SCD_File_ver300.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="filefmt\SCD_File_ver310.cpp" FORMNAME="" UNITNAME="SCD_File_ver310.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CSV_Files.cpp" FORMNAME="" UNITNAME="CSV_Files" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1042
+CodePage=949
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=1
+Item0=$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=1
+Item0=$(BCB)\Projects;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=3
+Item0=..\temp\
+Item1=..\temp
+Item2=.\objs
+
+[HistoryLists\hlFinalOutputDir]
+Count=2
+Item0=..\output\
+Item1=..\output
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>
